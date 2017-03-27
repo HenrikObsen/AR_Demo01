@@ -16,10 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-this.architectView = (ArchitectView)this.findViewById(R.id.architectView);
-final ArchitectStartupConfiguration config = new ArchitectStartupConfiguration();
-config.setLicenseKey("4WvCPUjJl3edLbo+8AbIH6vMigL7Bh4aNR+1/r+rzzjklxjWfmGYWNvdQ24XIvt7vsVFJLK+zrsS61aTKdeQnnq0/rnfRixuZxd4y/+UQKr26p+iHKRnrGtsYFKdudCj261WK6NKSauoRwpd/ysOWe7lFFqP1eEyHRBveYsOT2VTYWx0ZWRfX86l4vFOeFFePm4Pola+cQ0A9kjaw53Zk/LUhY1NSFFbznGuG6kbsBDOIfH+fwQx9rSCDQ7Z53ZorhFFuUfYYorl1O+eP1KfTUMMAJzbV9VaElU028+oI4QOHuffp32IcN6OLqwnjMXXJdBXb+9/IFQJqiwgT7SOQ1dTnzmUxzimPTFyojAM3Wm3riACXeWxPBYGdPfNOjdqUfSbONQMBINRz+ERfBRL/K6bNxXLbHdkzdpEXzqWuNsgwKdMoKO4o2fYgaafhF3qGvqvO2ZJkZNArU9mYCABuClpJzgVH2Qntyc6Vh93wIc+2XQyUJ7S2hb+f/oUHmYCAlVcB9fr96lOJgwjujMfjS56Z//CoMtc4M1XoYm4FKzWZ2hdq04W8g8Twjjxg/y9BEdpV9IUNolw9EwZta+zh2xrw3cEdEMC/H6fTLtUC0yqObkYvt+9h78JSd+ZI0c9AKQn8slaYO+MSsUL/HG1dQ==");
-this.architectView.onCreate(config);
+
 
 var app = {
     // Application Constructor
@@ -37,7 +34,11 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
+    onDeviceReady: function () {
+        this.architectView = (ArchitectView)this.findViewById(R.id.architectView);
+        final ArchitectStartupConfiguration config = new ArchitectStartupConfiguration();
+        config.setLicenseKey("4WvCPUjJl3edLbo+8AbIH6vMigL7Bh4aNR+1/r+rzzjklxjWfmGYWNvdQ24XIvt7vsVFJLK+zrsS61aTKdeQnnq0/rnfRixuZxd4y/+UQKr26p+iHKRnrGtsYFKdudCj261WK6NKSauoRwpd/ysOWe7lFFqP1eEyHRBveYsOT2VTYWx0ZWRfX86l4vFOeFFePm4Pola+cQ0A9kjaw53Zk/LUhY1NSFFbznGuG6kbsBDOIfH+fwQx9rSCDQ7Z53ZorhFFuUfYYorl1O+eP1KfTUMMAJzbV9VaElU028+oI4QOHuffp32IcN6OLqwnjMXXJdBXb+9/IFQJqiwgT7SOQ1dTnzmUxzimPTFyojAM3Wm3riACXeWxPBYGdPfNOjdqUfSbONQMBINRz+ERfBRL/K6bNxXLbHdkzdpEXzqWuNsgwKdMoKO4o2fYgaafhF3qGvqvO2ZJkZNArU9mYCABuClpJzgVH2Qntyc6Vh93wIc+2XQyUJ7S2hb+f/oUHmYCAlVcB9fr96lOJgwjujMfjS56Z//CoMtc4M1XoYm4FKzWZ2hdq04W8g8Twjjxg/y9BEdpV9IUNolw9EwZta+zh2xrw3cEdEMC/H6fTLtUC0yqObkYvt+9h78JSd+ZI0c9AKQn8slaYO+MSsUL/HG1dQ==");
+        this.architectView.onCreate(config);
         app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
         var launchDemoButton = document.getElementById('launch-demo');
         launchDemoButton.onclick = function() {
