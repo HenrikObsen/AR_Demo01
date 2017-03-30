@@ -63,6 +63,9 @@
         },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.AR_Demo01.app"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.AR_Demo01.app"
         }
     },
     "dependent_plugins": {

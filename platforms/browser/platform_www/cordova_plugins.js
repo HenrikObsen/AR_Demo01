@@ -602,6 +602,14 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/com.wikitude.phonegap.WikitudePlugin/www/WikitudePlugin.js",
+        "id": "com.wikitude.phonegap.WikitudePlugin.WikitudePlugin",
+        "pluginId": "com.wikitude.phonegap.WikitudePlugin",
+        "clobbers": [
+            "WikitudePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -627,7 +635,8 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.2.1",
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
-    "cordova-plugin-vibration": "2.1.4"
+    "cordova-plugin-vibration": "2.1.4",
+    "com.wikitude.phonegap.WikitudePlugin": "6.1.0"
 }
 // BOTTOM OF METADATA
 });
